@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'KavoonRegular';
+    src: url('kavoon-regular.eot');
+    src: url('kavoon-regular.eot') format('embedded-opentype'),
+         url('kavoon-regular.woff') format('woff'),
+         url('kavoon-regular.ttf') format('truetype'),
+         url('kavoon-regular.svg#KavoonRegular') format('svg');
+}

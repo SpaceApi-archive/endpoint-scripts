@@ -3,7 +3,8 @@ $(document).ready(function($){
     var Application = {
 
         run: function() {
-            this.view = $("#status");
+            this.view = $("#button, #circle3371, #path3339");
+            this.title = $("h2");
             this.load_status();
         },
 
@@ -37,10 +38,9 @@ $(document).ready(function($){
         },
 
         render: function(status) {
-            this.view.removeClass('open');
-            this.view.removeClass('closed');
-            this.view.removeClass('undefined');
-            this.view.addClass(status);
+
+            this.title.text(status.toUpperCase());
+            this.view.attr('class', status);
         }
     }
 

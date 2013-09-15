@@ -20,12 +20,14 @@ if(file_exists($status_file))
     {
         case "0":
         case "false":
+        case "closed":
 
             $spaceapi->state->open = false;
             break;
 
         case "1":
         case "true":
+        case "open":
 
             $spaceapi->state->open = true;
             break;

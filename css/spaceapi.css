@@ -1,13 +1,106 @@
-.open {
-    background: url('/img/green.png');
+@import "../font/kavoon-regular.css";
+
+body {
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
 }
-.closed {
-    background: url('/img/red.png');
+
+/**
+ * In order to use the width property to scale the svg
+ * the following attributes had to be added to the outer
+ * svg element:
+ *
+ *    preserveAspectRatio="xMinYMin meet"
+ *    viewBox="0 0 410 430"
+ *
+ * See:
+ *
+ *  http://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute
+ *  http://www.w3.org/TR/SVG/coords.html#ViewBoxAttribute
+ *  http://stackoverflow.com/questions/644896/how-do-i-scale-a-stubborn-svg-embedded-with-the-object-tag
+ *  https://blueprints.launchpad.net/inkscape/+spec/allow-browser-resizing
+ *
+ */
+#svg4534 {
+    width: 410px;
+    display: none;
 }
-.undefined {
-    background: url('/img/gray.png');
+
+h2 {
+    font-family: KavoonRegular;
+    font-size: 40px;
+    /* the letter spaceing breaks the centering */
+    /*letter-spacing: 0.7em;*/
 }
-#status {
+
+@media (max-width: 500px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #svg4534 {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #svg4534 {
+        width: 210px;
+    }
+
+}
+
+#button {
+    display: none;
+    margin: 0 auto;
+    text-align: left;
     width: 128px;
     height: 128px;
+}
+
+#button.open {
+    background: url('/img/button/green.png') no-repeat;
+}
+#button.closed {
+    background: url('/img/button/red.png') no-repeat;
+}
+#button.undefined {
+    background: url('/img/button/gray.png') no-repeat;
+}
+
+#circle3371,
+#path3339 {
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    transition: all linear 1s;
+}
+
+#circle3371.open {
+    fill: #2dd2b8 !important;
+}
+#circle3371.closed {
+    fill: #ff7f00 !important;
+}
+#circle3371.undefined {
+    fill: #00cfff !important;
+}
+
+
+#path3339.open {
+    fill: #007f3f !important;
+}
+#path3339.closed {
+    fill: #ec370f !important;
+}
+#path3339.undefined {
+    fill: #0f91ec !important;
 }

@@ -6,10 +6,22 @@
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="/js/spaceapi.js"></script>
 
+    <script>
+        $(document).ready(function(){
+
+            // uncomment one of both in order to use either the
+            // monster or a simple button to display the status
+            $("#svg4534").fadeIn();
+            //$("#button").fadeIn();
+        });
+
+    </script>
 </head>
 <body>
 
-<div id="status"></div>
+    <h2></h2>
+    <div id="button"></div>
+    <?php include('img/monster/monster.svg'); ?>
 
 </body>
 </html>

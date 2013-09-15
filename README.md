@@ -21,9 +21,9 @@ the scripts are in `/srv/http/spaceapi` while the following URLs are now availab
 Endpoint
 --------
 
-There's not much to say. Simply add your URL http://spaceapi.your-space.com/status.json [here](http://spaceapi.net/add-your-space).
+There's not much to say. Simply add [here](http://spaceapi.net/add-your-space) your URL http://spaceapi.your-space.com/status.json.
 
-![Endpoint][json.png]
+![Endpoint](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/json.png)
 
 Status display page
 -------------------
@@ -32,8 +32,8 @@ Your space status is display on http://spaceapi.your-space.com or on http://spac
 
 There are two ways how the status can be displayed. Either by a button or by a monster.
 
-![Display page with a button][button.png]
-![Display page with a monster][monster.png]
+![Display page with a button](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/button.png)
+![Display page with a monster](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/monster.png)
 
 To select one of both edit the following section in `status_html.php`
 
@@ -56,12 +56,8 @@ These parameters must be provided:
 * _action_, the value must always be *update*.
 * _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to use call the script via SSL.
 * _status_, the status value which must be one of
-** _0_, _false_, _closed_
-** _1_, _true_, _open_
-** _null_.
+  * _0_, _false_, _closed_
+  * _1_, _true_, _open_
+  * _null_
 
 To change the key edit `status_update.php`.
-
-[button.png]: https://github.com/spaceapi/endpoint-script/raw/master/src/screenshots/button.png
-[monster.png]: https://github.com/spaceapi/endpoint-script/raw/master/src/screenshots/monster.png
-[json.png]: https://github.com/spaceapi/endpoint-script/raw/master/src/screenshots/json.png

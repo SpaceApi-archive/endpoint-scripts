@@ -28,9 +28,9 @@ There's not much to say. Simply add [here](http://spaceapi.net/add-your-space) y
 Status display page
 -------------------
 
-Your space status is display on http://spaceapi.your-space.com or on http://spaceapi.your-space.com/status.php respectively.
+Your space status is displayed on http://spaceapi.your-space.com or on http://spaceapi.your-space.com/status.php respectively.
 
-There are two ways how the status can be displayed. Either by a button or by a monster.
+The status can be displayed either by a button or by a monster.
 
 ![Display page with a button](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/button.png)
 ![Display page with a monster](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/monster.png)
@@ -54,7 +54,7 @@ To update your status the URL to be used looks like http://spaceapi.your-space.c
 These parameters must be provided:
 
 * _action_, the value must always be *update*.
-* _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to use call the script via SSL.
+* _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL.
 * _status_, the status value which must be one of
   * _0_, _false_, _closed_
   * _1_, _true_, _open_

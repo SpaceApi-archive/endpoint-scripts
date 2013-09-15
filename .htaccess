@@ -1,0 +1,15 @@
+
+<Files status_update.php>
+	Order Deny,Allow
+	Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^status.json$  index.php?format=json [L]
+
+</IfModule>

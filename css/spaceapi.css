@@ -1,0 +1,13 @@
+.open {
+    background: url('/img/green.png');
+}
+.closed {
+    background: url('/img/red.png');
+}
+.undefined {
+    background: url('/img/gray.png');
+}
+#status {
+    width: 128px;
+    height: 128px;
+}

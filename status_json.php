@@ -12,10 +12,10 @@ if(file_exists($status_file))
 {
     $content = trim(file_get_contents($status_file));
 
-    // If for some/unknown reason there were PHP warnings/errors written
+    // If there were for some/unknown reason PHP warnings/errors written
     // to status.txt a typecast of $content to bool would turn the PHP
     // message into 'false' which is obviously not the correct state.
-    // So we check explicit for the values and make anything unwanted 'null'.
+    // So we check explicitly for the values and make anything unwanted 'null'.
     switch($content)
     {
         case "0":

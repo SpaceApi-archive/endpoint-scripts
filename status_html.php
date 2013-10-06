@@ -21,7 +21,12 @@
 
     <h2></h2>
     <div id="button"></div>
-    <?php include('img/monster/monster.svg'); ?>
+
+    <?php
+        // we cannot use an img tag for the svg since we're manipulating
+        // the DOM of it to animate the state changes
+        include('img/monster/monster.svg');
+    ?>
 
 </body>
 </html>

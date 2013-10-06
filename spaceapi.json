@@ -1,11 +1,3 @@
-<?php
-
-/**
- * http://spaceapi.net/documentation/#Reference
- * http://spaceapi.net/documentation/#Examples
- */
-
-return <<<JSON
 {
     "api": "0.13",
     "space": "The space name",
@@ -39,6 +31,19 @@ return <<<JSON
     ],
     "cache": {
         "schedule": "m.02"
+    },
+    "sensors": {
+        "temperature": [
+            {
+                "value": null,
+                "unit": "°C",
+                "location": "Roof"
+            },
+            {
+                "value": null,
+                "unit": "°De",
+                "location": "Lab"
+            }
+        ]
     }
 }
-JSON;

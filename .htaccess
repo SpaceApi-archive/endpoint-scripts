@@ -1,15 +1,19 @@
-
-<Files status_update.php>
-	Order Deny,Allow
-	Deny from all
-</Files>
-
 <IfModule mod_rewrite.c>
 
 Options +FollowSymlinks
 RewriteEngine on
 RewriteBase /
 
-RewriteRule ^status.json$  index.php?format=json [L]
+#RewriteRule ^status.json$  status.php?format=json [L]
+
+# The following rule tells Apache that if the requested filename
+# exists, simply serve it.
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+#RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+RewriteRule ^(.*)$ index.php [NC,L]
 
 </IfModule>

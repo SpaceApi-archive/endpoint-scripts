@@ -28,7 +28,7 @@ There's not much to say. Simply add [here](http://spaceapi.net/add-your-space) y
 Status display page
 -------------------
 
-Your space status is displayed on http://spaceapi.your-space.com or on http://spaceapi.your-space.com/status.php respectively.
+Your space status is displayed on http://spaceapi.your-space.com or on http://spaceapi.your-space.com/status respectively.
 
 The status can be displayed either by a button or by a monster.
 
@@ -48,6 +48,12 @@ $(document).ready(function(){
 
 Status update script
 --------------------
+
+*NOTE:*
+
+The endpoint scripts got updated and the old update call is no longer working. Please ask @slopjong,
+he knows how things work and he can explain you everything. If you want the old scripts, clone or
+download v1.
 
 To update your status the URL to be used looks like http://spaceapi.your-space.com/status.php?action=update&key=86f7896f97asdf89u0a9s7d7fdasgsda88af&status=1
 

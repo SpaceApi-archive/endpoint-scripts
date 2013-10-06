@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="update_use_cases.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3989"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3977"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3968"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="230.79324"
+     inkscape:cy="298.11594"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="720"
+     inkscape:window-x="1680"
+     inkscape:window-y="282"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="translate(98.571426,498.57143)"
+       id="g3823">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.04680264px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338"
+         id="rect3825"
+         width="158.52461"
+         height="71.381767"
+         x="102.08751"
+         y="156.6713" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="180.6125"
+         y="187.01062"
+         id="text3827"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3829"
+           x="180.6125"
+           y="187.01062"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans">Measurement</tspan><tspan
+           sodipodi:role="line"
+           x="180.6125"
+           y="212.01062"
+           id="tspan3831"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans">controller</tspan></text>
+    </g>
+    <g
+       transform="translate(12.857143,504.28571)"
+       id="g3833">
+      <rect
+         y="166.47101"
+         x="35.192951"
+         height="41.782349"
+         width="103.21091"
+         id="rect3835"
+         style="fill:none;stroke:#000000;stroke-width:0.64622241px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3837"
+         y="194.64246"
+         x="86.148987"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           id="tspan3839"
+           y="194.64246"
+           x="86.148987"
+           sodipodi:role="line">Sensor</tspan></text>
+    </g>
+    <g
+       transform="translate(41.428577,548.57142)"
+       id="g3841">
+      <rect
+         y="155.24272"
+         x="462.08752"
+         height="71.381767"
+         width="158.52461"
+         id="rect3843"
+         style="fill:none;stroke:#000000;stroke-width:1.04680264px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3845"
+         y="183.77541"
+         x="541.67212"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           id="tspan3847"
+           y="183.77541"
+           x="541.67212"
+           sodipodi:role="line">SpaceAPI</tspan><tspan
+           id="tspan3849"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           y="208.77541"
+           x="541.67212"
+           sodipodi:role="line">endpoint</tspan></text>
+    </g>
+    <g
+       id="g3859"
+       transform="translate(98.571426,587.14286)">
+      <rect
+         y="156.6713"
+         x="102.08751"
+         height="71.381767"
+         width="158.52461"
+         id="rect3861"
+         style="fill:none;stroke:#000000;stroke-width:1.04680264px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3863"
+         y="187.01062"
+         x="180.6125"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           y="187.01062"
+           x="180.6125"
+           id="tspan3865"
+           sodipodi:role="line">Measurement</tspan><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           id="tspan3867"
+           y="212.01062"
+           x="180.6125"
+           sodipodi:role="line">controller</tspan></text>
+    </g>
+    <g
+       id="g3869"
+       transform="translate(12.857143,592.85714)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.64622241px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338"
+         id="rect3871"
+         width="103.21091"
+         height="41.782349"
+         x="35.192951"
+         y="166.47101" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="86.148987"
+         y="194.64246"
+         id="text3873"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="86.148987"
+           y="194.64246"
+           id="tspan3875"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans">Sensor</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 152.85715,690.93361 45.71429,0"
+       id="path3881"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 151.42858,780.93361 45.71429,0"
+       id="path3883"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="M 362.85715,785.21933 499.93314,748.48992"
+       id="path3885"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="M 360.00001,690.93361 497.5989,727.80312"
+       id="path3887"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3761"
+       transform="translate(82.857143,31.428572)">
+      <rect
+         y="156.6713"
+         x="102.08751"
+         height="71.381767"
+         width="158.52461"
+         id="rect2985"
+         style="fill:none;stroke:#000000;stroke-width:1.04680264px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2987"
+         y="187.01062"
+         x="180.6125"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           y="187.01062"
+           x="180.6125"
+           id="tspan2989"
+           sodipodi:role="line">Measurement</tspan><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           id="tspan2991"
+           y="212.01062"
+           x="180.6125"
+           sodipodi:role="line">controller</tspan></text>
+    </g>
+    <g
+       id="g3786"
+       transform="translate(-18.571429,11.428572)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.64622241px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338"
+         id="rect3773"
+         width="103.21091"
+         height="41.782349"
+         x="35.192951"
+         y="166.47101" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="86.148987"
+         y="194.64246"
+         id="text3775"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="86.148987"
+           y="194.64246"
+           id="tspan3779"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans">Sensor</tspan></text>
+    </g>
+    <g
+       id="g3809"
+       transform="translate(18.571429,28.571432)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.04680264px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338"
+         id="rect3793"
+         width="158.52461"
+         height="71.381767"
+         x="462.08752"
+         y="155.24272" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="541.67212"
+         y="183.77541"
+         id="text3795"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="541.67212"
+           y="183.77541"
+           id="tspan3799"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans">SpaceAPI</tspan><tspan
+           sodipodi:role="line"
+           x="541.67212"
+           y="208.77541"
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           id="tspan3803">endpoint</tspan></text>
+    </g>
+    <g
+       transform="translate(-17.142857,70.000001)"
+       id="g3815">
+      <rect
+         y="166.47101"
+         x="35.192951"
+         height="41.782349"
+         width="103.21091"
+         id="rect3817"
+         style="fill:none;stroke:#000000;stroke-width:0.64622241px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.97872338" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3819"
+         y="194.64246"
+         x="86.148987"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+           id="tspan3821"
+           y="194.64246"
+           x="86.148987"
+           sodipodi:role="line">Sensor</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 121.42857,198.07647 180,213.79075"
+       id="path3877"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 121.42857,253.79075 58.57143,-20"
+       id="path3879"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 347.14285,225.21932 130,0"
+       id="path3889"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="375.71426"
+       y="213.79079"
+       id="text6287"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6289"
+         x="375.71426"
+         y="213.79079"
+         style="font-size:20px">update</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6291"
+       y="679.50507"
+       x="412.85715"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:20px"
+         y="679.50507"
+         x="412.85715"
+         id="tspan6293"
+         sodipodi:role="line">update</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="395.71429"
+       y="800.93365"
+       id="text6295"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6297"
+         x="395.71429"
+         y="800.93365"
+         style="font-size:20px">update</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="15.714286"
+       y="45.219326"
+       id="text6318"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6320"
+         x="15.714286"
+         y="45.219326">One controller for sensor</tspan><tspan
+         sodipodi:role="line"
+         x="15.714286"
+         y="95.21933"
+         id="tspan6322">instances of the same type</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6324"
+       y="476.64789"
+       x="38.571434"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="476.64789"
+         x="38.571434"
+         id="tspan6326"
+         sodipodi:role="line">Multiple controllers for sensor</tspan><tspan
+         id="tspan6328"
+         y="526.64789"
+         x="38.571434"
+         sodipodi:role="line">instances of the same type</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="357.14285"
+       y="239.50508"
+       id="text6330"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6332"
+         x="357.14285"
+         y="239.50508"
+         style="font-size:12px">{</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="254.50508"
+         id="tspan6334"
+         style="font-size:12px">  &quot;sensors&quot;: {</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="269.50507"
+         id="tspan6340"
+         style="font-size:12px">    &quot;temperature&quot;: [</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="284.50507"
+         id="tspan6344"
+         style="font-size:12px">      { &quot;value&quot;: 23 },</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="299.50507"
+         id="tspan6346"
+         style="font-size:12px">      { &quot;value&quot;: 21 }</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="314.50507"
+         id="tspan6342"
+         style="font-size:12px">    ]</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="329.50507"
+         id="tspan6336"
+         style="font-size:12px">  }</tspan><tspan
+         sodipodi:role="line"
+         x="357.14285"
+         y="344.50507"
+         id="tspan6338"
+         style="font-size:12px">}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="387.96722"
+       y="830.58514"
+       id="text6330-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6332-9"
+         x="387.96722"
+         y="830.58514"
+         style="font-size:12px">{</tspan><tspan
+         sodipodi:role="line"
+         x="387.96722"
+         y="845.58514"
+         id="tspan6334-8"
+         style="font-size:12px">  &quot;sensor&quot;: {</tspan><tspan
+         sodipodi:role="line"
+         x="387.96722"
+         y="860.58514"
+         id="tspan6340-1"
+         style="font-size:12px">    &quot;temperature&quot;: [</tspan><tspan
+         sodipodi:role="line"
+         x="387.96722"
+         y="875.58514"
+         id="tspan6346-2"
+         style="font-size:12px">      { &quot;value&quot;: 23 }</tspan><tspan
+         sodipodi:role="line"
+         x="387.96722"
+         y="890.58514"
+         id="tspan6342-7"
+         style="font-size:12px">    ]</tspan><tspan
+         sodipodi:role="line"
+         x="387.96722"
+         y="905.58514"
+         id="tspan6336-2"
+         style="font-size:12px">  }</tspan><tspan
+         sodipodi:role="line"
+         x="387.96722"
+         y="920.58514"
+         id="tspan6338-7"
+         style="font-size:12px">}</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6392"
+       y="589.15656"
+       x="376.53867"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:12px"
+         y="589.15656"
+         x="376.53867"
+         id="tspan6394"
+         sodipodi:role="line">{</tspan><tspan
+         style="font-size:12px"
+         id="tspan6396"
+         y="604.15656"
+         x="376.53867"
+         sodipodi:role="line">  &quot;sensors&quot;: {</tspan><tspan
+         style="font-size:12px"
+         id="tspan6398"
+         y="619.15656"
+         x="376.53867"
+         sodipodi:role="line">    &quot;temperature&quot;: [</tspan><tspan
+         style="font-size:12px"
+         id="tspan6400"
+         y="634.15656"
+         x="376.53867"
+         sodipodi:role="line">      { &quot;value&quot;: 23 }</tspan><tspan
+         style="font-size:12px"
+         id="tspan6402"
+         y="649.15656"
+         x="376.53867"
+         sodipodi:role="line">    ]</tspan><tspan
+         style="font-size:12px"
+         id="tspan6404"
+         y="664.15656"
+         x="376.53867"
+         sodipodi:role="line">  }</tspan><tspan
+         style="font-size:12px"
+         id="tspan6406"
+         y="679.15656"
+         x="376.53867"
+         sodipodi:role="line">}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="288.57144"
+       y="382.36218"
+       id="text6408"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6410"
+         x="288.57144"
+         y="382.36218"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold">Transfer method: POST</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6412"
+       y="959.50513"
+       x="145.71429"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+         y="959.50513"
+         x="145.71429"
+         id="tspan6414"
+         sodipodi:role="line">Transfer method POST not applicable here.</tspan><tspan
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+         y="984.50513"
+         x="145.71429"
+         sodipodi:role="line"
+         id="tspan6416">Instead of transmitting a JSON the single instances</tspan><tspan
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+         y="1009.5051"
+         x="145.71429"
+         sodipodi:role="line"
+         id="tspan6418">should be updated with GET where the sensor </tspan><tspan
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+         y="1034.5051"
+         x="145.71429"
+         sodipodi:role="line"
+         id="tspan6420">array index can explicitly defined.</tspan></text>
+  </g>
+</svg>

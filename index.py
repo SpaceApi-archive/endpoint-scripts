@@ -15,20 +15,57 @@ def spaceapi_app(environ, start_response):
 
     start_response(status, headers)
 
-    request_uri = environ['REQUEST_URI']
+    return {
+        'sensor' : SensorController.execute
+    }.get(Router.get_controller(), StatusController.execute)()
 
-    controller = Router.get_controller()
-    return controller
+
+    #request_uri = environ['REQUEST_URI']
 
     #print(test)
     #print('test')
     #print >> environ['wsgi.errors'], "application debug #2"
 
-    ret = request_uri
+    #ret = request_uri
     #ret = [("%s: %s\n" % (key, value)).encode("utf-8")
     #       for key, value in environ.items()]
+
     return ret
 
+
+class SensorController:
+
+    @classmethod
+    def execute(cls):
+        #return Router.get_action()
+        return {
+            'set' : cls.setAction
+        }.get(Router.get_action(), cls.noneAction)()
+
+    @classmethod
+    def noneAction(cls):
+        return ''
+
+    @classmethod
+    def setAction(cls):
+        return 'SensorController::set'
+
+
+class StatusController:
+
+    @classmethod
+    def execute(cls):
+        return {
+            'json' : cls.jsonAction
+        }.get(Router.get_action(), cls.htmlAction)()
+
+    @classmethod
+    def jsonAction(cls):
+        return 'StatusController::json'
+
+    @classmethod
+    def htmlAction(cls):
+        return 'StatusController::html'
 
 class Router:
 
@@ -42,7 +79,10 @@ class Router:
     def get_segment(cls, index):
         request_uri = cls.environ['REQUEST_URI']
         segments = request_uri.strip('/').split('/')
-        return segments[index]
+        if len(segments) >= index-1:
+            return segments[index]
+        else:
+            return ''
 
     @classmethod
     def get_controller(cls):

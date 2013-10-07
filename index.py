@@ -8,6 +8,8 @@ def spaceapi_app(environ, start_response):
 
     #setup_testing_defaults(environ)
 
+    Router.set_environ(environ)
+
     status = '200 OK'
     headers = [('Content-type', 'text/plain; charset=utf-8')]
 
@@ -28,19 +30,27 @@ def spaceapi_app(environ, start_response):
     return ret
 
 
-class Router():
+class Router:
 
-    @staticmethod
-    def get_router_segment(index):
-        return ''
+    environ = None
 
-    @staticmethod
-    def get_controller():
-        return 'asdfasdfasdf'
+    @classmethod
+    def set_environ(cls, environ):
+        cls.environ = environ
 
-    @staticmethod
-    def get_action():
-        return 'asdfasdf'
+    @classmethod
+    def get_segment(cls, index):
+        request_uri = cls.environ['REQUEST_URI']
+        segments = request_uri.strip('/').split('/')
+        return segments[index]
+
+    @classmethod
+    def get_controller(cls):
+        return cls.get_segment(0)
+
+    @classmethod
+    def get_action(cls):
+        return cls.get_segment(1)
 
 
 class Output():

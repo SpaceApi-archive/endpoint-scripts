@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    ServerAdmin root@localhost
+    DocumentRoot "/srv/http/my.hackerspace.com"
+    ServerName my.hackerspace.com
+    <Directory "/srv/http/my.hackerspace.com">
+	    Options Indexes FollowSymLinks Includes
+	    AllowOverride all
+	    Order allow,deny
+	    Allow from all
+    </Directory>
+</VirtualHost>

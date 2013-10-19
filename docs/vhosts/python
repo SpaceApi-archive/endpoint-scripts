@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    ServerAdmin root@localhost
+    DocumentRoot "/srv/http/my.hackerspace.com"
+    ServerName my.hackerspace.com
+    WSGIScriptAlias / /srv/http/my.hackerspace.com/index.py
+    <Directory /srv/http/my.hackerspace.com>
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>

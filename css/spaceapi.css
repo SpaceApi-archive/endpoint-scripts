@@ -34,6 +34,10 @@ h2 {
     /*letter-spacing: 0.7em;*/
 }
 
+#svg4534, h2 {
+    transition: all 0.3s ease 0s;
+}
+
 @media (max-width: 500px) {
 
     h2 {

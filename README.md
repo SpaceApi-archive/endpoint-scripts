@@ -67,3 +67,12 @@ These parameters must be provided:
   * _null_
 
 To change the key edit `status_update.php`.
+
+
+How to integrate the status with WordPress?
+----------------------------------------------------------------------
+
+# Login to your WordPress Backend
+# Click on `Appearance > Widgets` in the left sidebar
+# Drag the **Text** widget to your primary sidebar or wherever you want it
+# Now put this code line to your widget input field: ```<iframe src="http://spaceapi.my-hackerspace.com/">```

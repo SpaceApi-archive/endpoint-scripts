@@ -1,13 +1,17 @@
 <?php
 
-// This crappy cURL REST tester should create two files in the
+// This crappy cURL REST tester should create three files in the
 // data directory:
 //
 //   sensors.temperature.0.value
 //   sensors.temperature.1.value
+//   state.open
 
 $sensors = <<<JSON
- {
+{
+    "state": {
+        "open": true
+    },
     "sensors": {
         "temperature": [
             { "value": 31 },
@@ -22,7 +26,7 @@ $sensors = urlencode($sensors);
 
 $ch = curl_init("http://int.hacksaar.de/sensor/set/");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, "sensors=$sensors");
+curl_setopt($ch, CURLOPT_POSTFIELDS, "sensors=$sensors&key=86f7896f97asdf89u0a9s7d7fdasgsda88af");
 $data = curl_exec_follow($ch);
 curl_close($ch);
 
@@ -33,6 +37,7 @@ function minify_json($json) {
     return json_encode(json_decode($json));
 }
 
+// See http://slopjong.de/2012/03/31/curl-follow-locations-with-safe_mode-enabled-or-open_basedir-set/
 function curl_exec_follow($ch, &$maxredirect = null) {
 
     // we emulate a browser here since some websites detect

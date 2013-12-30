@@ -35,7 +35,7 @@ The status can be displayed either by a button or by a monster.
 ![Display page with a button](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/button.png)
 ![Display page with a monster](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/monster.png)
 
-To select one of both edit the following section in `status_html.php`
+To select one of both edit the following section in `template.html`
 
 ```
 $(document).ready(function(){

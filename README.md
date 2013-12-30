@@ -18,10 +18,12 @@ Given the following apache configuration,
 
 the scripts are in `/srv/http/spaceapi` while the following URLs are now available:
 
+> _Note: if you plan to put the endpoint scripts in a subdirectory of another DocumentRoot, the routing won't work. This is a bug that still needs to be fixed. We recommend to use a dedicated DocumentRoot in the meantime._
+
 Endpoint
 --------
 
-There's not much to say. Simply add [here](http://spaceapi.net/add-your-space) your URL http://spaceapi.your-space.com/status.json.
+There's not much to say. Simply adapt `spaceapi.json` to your needs and add [here](http://spaceapi.net/add-your-space) your URL `http://spaceapi.your-space.com/status/json`.
 
 ![Endpoint](https://raw.github.com/SpaceApi/endpoint-scripts/master/screenshots/json.png)
 

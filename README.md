@@ -49,25 +49,72 @@ $(document).ready(function(){
 Status update script
 --------------------
 
-*NOTE:*
+To push data to the endpoint scripts the data structure to be sent to the server is a subset of the specification version 13.
 
-The endpoint scripts got updated and the old update call is no longer working. Please ask @slopjong,
-he knows how things work and he can explain you everything. If you want the old scripts, clone or
-download v1.
+If you wanted to push the door status and two temperature sensor values your measurement unit (Raspberry Pi, Arduino, ...) should use the following structure. 
 
-To update your status the URL to be used looks like http://spaceapi.your-space.com/status.php?action=update&key=86f7896f97asdf89u0a9s7d7fdasgsda88af&status=1
+```
+{
+    "state": {
+        "open": true
+    },
+    "sensors": {
+        "temperature": [
+            { "value": 31 },
+            { "value": 23 }
+        ]
+    }
+}
+```
+
+After urlencoding the json use the URL below. 
+
+```
+http://spaceapi.your-space.com/sensors/set/?&key=<api_key>&sensors=<urlencoded_json>
+```
 
 These parameters must be provided:
 
-* _action_, the value must always be *update*.
 * _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL.
-* _status_, the status value which must be one of
-  * _0_, _false_, _closed_
-  * _1_, _true_, _open_
-  * _null_
+* _sensors_, the sensor data to be updated server-side. You can push one single value or a whole bunch of sensor instances at once.
 
-To change the key edit `status_update.php`.
+To change the key, simply edit `index.php` or `index.py` if you use Python.
 
+In PHP you would do it as follows.
+
+```
+// change this to your actual endpoint URL without a trailing slash 
+$endpoint_url = "http://my.hackerspace.com";
+
+// if you changed the default api key in the endpoint script(s)
+// you must change this key here too, otherwise no sensor data
+// are updated server-side
+$key = "86f7896f97asdf89u0a9s7d7fdasgsda88af";
+
+$sensors = <<<JSON
+{
+    "state": {
+        "open": true
+    },
+    "sensors": {
+        "temperature": [
+            { "value": 31 },
+            { "value": 23 }
+        ]
+    }
+}
+JSON;
+
+// minify the json
+$sensors = json_encode(json_decode($sensors));
+$sensors = urlencode($sensors);
+
+$ch = curl_init("$endpoint_url/sensor/set/");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "sensors=$sensors&key=$key");
+$data = curl_exec($ch);
+curl_close($ch);
+```
 
 How to integrate the status with WordPress?
 ----------------------------------------------------------------------

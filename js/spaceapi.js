@@ -34,7 +34,7 @@ $(document).ready(function($){
                     }
                 }
             });
-            setTimeout(Application.load_status, 1000);
+            setTimeout(Application.load_status, 30000);
         },
 
         render: function(status) {

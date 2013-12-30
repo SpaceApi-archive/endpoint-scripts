@@ -67,7 +67,7 @@ E.g. to push the door status and two temperature sensor values your measurement 
 }
 ```
 
-_Note: if you need to update an array of sensors this must be done in the same request since the order matters. This means that at the moment it's impossible to update the first temperature sensor by one microcontroller and the second by another._
+> _Note: if you need to update an array of sensors this must be done in the same request since the order matters. This means that at the moment it's impossible to update the first temperature sensor by one microcontroller and the second by another._
 
 After urlencoding the json you make a POST request to the URL schema as shown below.
 

@@ -2,7 +2,8 @@
 
 body {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0px 0px 0px;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -58,6 +59,54 @@ h2 {
 
     #svg4534 {
         width: 210px;
+    }
+
+}
+
+@media (max-width: 220px) {
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #svg4534 {
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 160px) {
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #svg4534 {
+        width: 120px;
+    }
+
+}
+
+@media (max-width: 125px) {
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #svg4534 {
+        width: 80px;
+    }
+
+}
+
+@media (max-width: 90px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    #svg4534 {
+        width: 50px;
     }
 
 }

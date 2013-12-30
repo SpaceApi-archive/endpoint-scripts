@@ -19,7 +19,7 @@ switch(get_controller()) {
                 if($key !== @$_POST['key'])
                     die('Not allowed');
 
-                $sensors = @$_POST['sensors'];
+                $sensors = urldecode(@$_POST['sensors']);
 
                 // convert the json to an associative array
                 $sensors = json_decode($sensors, true);

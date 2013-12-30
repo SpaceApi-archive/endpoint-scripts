@@ -51,7 +51,7 @@ Status update script
 
 To push data to the endpoint scripts the data structure to be sent to the server is a subset of the specification version 13.
 
-If you wanted to push the door status and two temperature sensor values your measurement unit (Raspberry Pi, Arduino, ...) should use the following structure. 
+E.g. to push the door status and two temperature sensor values your measurement unit (Raspberry Pi, Arduino, ...) must use the following structure.
 
 ```
 {
@@ -67,7 +67,9 @@ If you wanted to push the door status and two temperature sensor values your mea
 }
 ```
 
-After urlencoding the json use the URL below. 
+_Note: if you need to update an array of sensors this must be done in the same request since the order matters. This means that at the moment it's impossible to update the first temperature sensor by one microcontroller and the second by another._
+
+After urlencoding the json you make a POST request to the URL schema as shown below.
 
 ```
 http://spaceapi.your-space.com/sensors/set/?&key=<api_key>&sensors=<urlencoded_json>
@@ -75,12 +77,10 @@ http://spaceapi.your-space.com/sensors/set/?&key=<api_key>&sensors=<urlencoded_j
 
 These parameters must be provided:
 
-* _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL.
+* _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL. To change the key, simply edit `index.php` or `index.py` if you use Python.
 * _sensors_, the sensor data to be updated server-side. You can push one single value or a whole bunch of sensor instances at once.
 
-To change the key, simply edit `index.php` or `index.py` if you use Python.
-
-In PHP you would do it as follows.
+The following code snippets shows how to push data to your endpoint.
 
 ```
 // change this to your actual endpoint URL without a trailing slash 

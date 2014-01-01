@@ -20,6 +20,8 @@ the scripts are in `/srv/http/spaceapi` while the following URLs are now availab
 
 > _Note: if you plan to put the endpoint scripts in a subdirectory of another DocumentRoot, the routing won't work. This is a bug that still needs to be fixed. We recommend to use a dedicated DocumentRoot in the meantime._
 
+If you deploy the endpoint scripts by cloning the repo, you should forbid public access to the `.git` directory. If you're using Apache as the web server with the module `rewrite` enabled, you don't need to do anything, `.htaccess` is already protecting it.
+
 Endpoint
 --------
 
@@ -82,7 +84,7 @@ These parameters must be provided:
 * _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL. To change the key, simply edit `index.php` or `index.py` if you use Python.
 * _sensors_, the sensor data to be updated server-side. You can push one single value or a whole bunch of sensor instances at once.
 
-The following code snippets shows how to push data to your endpoint.
+The following PHP code shows how to push data to your endpoint.
 
 ```
 // change this to your actual endpoint URL without a trailing slash 
@@ -117,6 +119,8 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, "sensors=$sensors&key=$key");
 $data = curl_exec($ch);
 curl_close($ch);
 ```
+
+If the URL, where you're trying to push, is a redirect, the snippet might not work under certain conditions. Read [this](http://slopjong.de/2012/03/31/curl-follow-locations-with-safe_mode-enabled-or-open_basedir-set/) to find out why.
 
 How to integrate the status with WordPress?
 ----------------------------------------------------------------------

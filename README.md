@@ -18,8 +18,6 @@ Given the following apache configuration,
 
 the scripts are in `/srv/http/spaceapi` while the following URLs are now available:
 
-> _Note: if you plan to put the endpoint scripts in a subdirectory of another DocumentRoot, the routing won't work. This is a bug that still needs to be fixed. We recommend to use a dedicated DocumentRoot in the meantime._
-
 If you deploy the endpoint scripts by cloning the repo, you should forbid public access to the `.git` directory. If you're using Apache as the web server with the module `rewrite` enabled, you don't need to do anything, `.htaccess` is already protecting it.
 
 Endpoint

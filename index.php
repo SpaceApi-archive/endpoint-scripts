@@ -149,6 +149,8 @@ function output_json() {
     header('Cache-Control: no-cache');
 
     $json = file_get_contents('spaceapi.json');
+
+    // we need an associative array later and no object
     $spaceapi = json_decode($json, true);
 
     // iterate over all sensor files and merge them with the static
@@ -160,15 +162,40 @@ function output_json() {
         list($type, $value) = explode(':', $file_content);
         settype($value, $type);
 
+        // here we take the file name of a data file (in the data dir)
+        // and create a list of indices which will be to address the
+        // corresponding field in the spaceapi.json template.
         $array_path = basename($file);
         $array_path = explode('.', $array_path);
 
-        $h = &$spaceapi;
+        // get a reference of the spaceapi, see the explanation later
+        $sub_array = &$spaceapi;
+
+        $do_write_value = true;
         foreach($array_path as $path_segment) {
-            $h = &$h[$path_segment];
+
+            // here we check if the sensor (or what we pushed to the
+            // endpoint scripts) is defined in the template, if it's
+            // not we will skip the value. The skip is done via a flag
+            // since we cannot use continue because we'd need to
+            // tell the outer loop to continue but not the current one
+            // we're currently in
+            if(!isset($sub_array[$path_segment]))
+            {
+                $do_write_value = false;
+                break;
+            }
+
+            // get the sub array of the spaceapi data structure (taken
+            // from the template) while we walk along the path according
+            // the file name (sliced into indices)
+            $sub_array = &$sub_array[$path_segment];
         }
 
-        $h = $value;
+        // finally merge the value of the data file into the spaceapi
+        // data structure
+        if($do_write_value)
+            $sub_array = $value;
     }
 
     echo json_encode($spaceapi);

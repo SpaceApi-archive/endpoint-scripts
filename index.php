@@ -16,16 +16,42 @@ switch(get_controller()) {
                 // is supported. The problem is the addressing of specific
                 // instances of a sensor array of the same type
 
-                if($key !== @$_POST['key'])
-                    die('Not allowed');
+                if( !isset($_POST['key']) && !isset($_GET['key']) )
+                {
+                    header('HTTP/1.0 403 Forbidden');
+                    die('No key provided');
+                }
 
-                $sensors = urldecode(@$_POST['sensors']);
+                $sensors = '';
+                $client_key = '';
+                switch($_SERVER['REQUEST_METHOD'])
+                {
+                    case 'POST':
+
+                        $client_key = $_POST['key'];
+                        $sensors = urldecode($_POST['sensors']);
+                        break;
+
+                    case 'GET':
+
+                        $client_key = $_GET['key'];
+                        $sensors = urldecode($_GET['sensors']);
+                        break;
+                }
+
+                if($client_key !== $key)
+                {
+                    header('HTTP/1.0 403 Forbidden');
+                    die('Wrong key');
+                }
 
                 // convert the json to an associative array
                 $sensors = json_decode($sensors, true);
 
                 if(! is_null($sensors))
                     save_sensors($sensors);
+                else
+                    die('Invalid JSON');
 
                 break;
 

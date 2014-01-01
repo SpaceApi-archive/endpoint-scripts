@@ -138,7 +138,18 @@ function output_html() {
     $template = file_get_contents('template.html');
     $monster = file_get_contents('img/monster/monster.svg');
 
-    $html = str_replace('{MONSTER}', $monster, $template);
+    $protocol = ($_SERVER['SERVER_PORT'] === 443) ? 'https' : 'http';
+    $base_url = "$protocol://"
+        . $_SERVER['HTTP_HOST']
+        . $_SERVER['REQUEST_URI'];
+
+    // substitute template variables
+    $html = str_replace('{{ monster }}', $monster, $template);
+    $html = str_replace('{{ baseurl }}', $base_url, $html);
+
+    // remove comments
+    $html = preg_replace('/{#.*#}/', '', $html);
+
     echo $html;
 }
 
@@ -180,7 +191,7 @@ function output_json() {
             // since we cannot use continue because we'd need to
             // tell the outer loop to continue but not the current one
             // we're currently in
-            if(!isset($sub_array[$path_segment]))
+            if(!array_key_exists($path_segment, $sub_array))
             {
                 $do_write_value = false;
                 break;

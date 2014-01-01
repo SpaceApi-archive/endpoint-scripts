@@ -1,10 +1,14 @@
 <html>
 <head>
 
-    <link rel="stylesheet" type="text/css" href="/css/spaceapi.css">
+    {# define a baseurl so that the endpoint scripts work with a 'top-level' document root or in a subdirectory #}
+    {# If the base tag makes trouble at some point, read http://stackoverflow.com/questions/1889076/is-it-recommended-to-use-the-base-html-tag #}
+    <base href="{{ baseurl }}"><!--[if lte IE 6]></base><![endif]-->
 
-    <script src="/js/jquery-1.10.1.min.js"></script>
-    <script src="/js/spaceapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/spaceapi.css">
+
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/spaceapi.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -22,7 +26,7 @@
 <h2></h2>
 <div id="button"></div>
 
-{MONSTER}
+{{ monster }}
 
 </body>
 </html>

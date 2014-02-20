@@ -51,7 +51,7 @@ switch(get_controller()) {
                 if(! is_null($sensors))
                     save_sensors($sensors);
                 else
-                    die('Invalid JSON');
+                    die('Invalid JSON: '. $sensors);
 
                 break;
 

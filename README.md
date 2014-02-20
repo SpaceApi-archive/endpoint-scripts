@@ -48,7 +48,7 @@ $(document).ready(function(){
 });
 ```
 
-Status update script
+How to update sensor data?
 --------------------
 
 To push data to the endpoint scripts the data structure to be sent to the server is a subset of the specification version 13.
@@ -71,7 +71,7 @@ E.g. to push the door status and two temperature sensor values your measurement 
 
 > _Note: if you need to update an array of sensors this must be done in the same request since the order matters. This means that at the moment it's impossible to update the first temperature sensor by one microcontroller and the second by another. However different sensor arrays can be updated independently so in this case the `state/open` and `sensors/temperature` sensors could be updated in a separate request. An array is anything between the brackets `[]` so if you also had `sensors/barometer` you could update this in a separate request as well._
 
-After urlencoding the json you make a POST request to the URL schema as shown below.
+After urlencoding the json you make a GET request to the URL schema as shown below.
 
 ```
 http://spaceapi.your-space.com/sensors/set/?&key=<api_key>&sensors=<urlencoded_json>
@@ -81,6 +81,13 @@ These parameters must be provided:
 
 * _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL. To change the key, simply edit `index.php` or `index.py` if you use Python.
 * _sensors_, the sensor data to be updated server-side. You can push one single value or a whole bunch of sensor instances at once.
+
+
+Example URL for updating the hackerspace/door status:
+
+```
+http://spaceapi.your-space.com/sensor/set/?key=86f7896f97asdf89u0a9s7d7fdasgsda88af&sensors={%22state%22:{%22open%22:false}}
+```
 
 The following PHP code shows how to push data to your endpoint.
 
@@ -119,6 +126,13 @@ curl_close($ch);
 ```
 
 If the URL, where you're trying to push, is a redirect, the snippet might not work under certain conditions. Read [this](http://slopjong.de/2012/03/31/curl-follow-locations-with-safe_mode-enabled-or-open_basedir-set/) to find out why.
+
+
+Curl:
+
+```
+curl --data-urlencode sensors='{"state":{"open":false}}' --data key=86f7896f97asdf89u0a9s7d7fdasgsda88af http://spaceapi.your-space.com/sensor/set
+```
 
 How to integrate the status with WordPress?
 ----------------------------------------------------------------------

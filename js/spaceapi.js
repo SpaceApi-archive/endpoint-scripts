@@ -10,7 +10,7 @@ $(document).ready(function($){
 
         load_status: function() {
 
-            $.getJSON("/status/json", function(data){
+            $.getJSON("status/json", function(data){
 
                 if(data !== null && typeof data === 'object'
                     && data.hasOwnProperty('state')

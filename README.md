@@ -79,7 +79,7 @@ http://spaceapi.your-space.com/sensors/set/?&key=<api_key>&sensors=<urlencoded_j
 
 These parameters must be provided:
 
-* _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL. To change the key, simply edit `index.php` or `index.py` if you use Python.
+* _key_, this value is a random string to protect the update script. This is not a strong protection and it's highly recommended to call the script via SSL. To change the key, simply edit `config.json`.
 * _sensors_, the sensor data to be updated server-side. You can push one single value or a whole bunch of sensor instances at once.
 
 

@@ -18,5 +18,6 @@ RewriteRule ^(.*)$ index.php [NC,L]
 
 # Make the .git directory inaccessible
 RedirectMatch 404 /\.git.*$
+RedirectMatch 404 /config.json
 
 </IfModule>

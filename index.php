@@ -2,7 +2,8 @@
 
 // a random string that you need to pass to this script if you want
 // to update some sensor values
-$key = '86f7896f97asdf89u0a9s7d7fdasgsda88af';
+$config = json_decode(file_get_contents('config.json'));
+$key = $config->api_key;
 
 switch(get_controller()) {
 

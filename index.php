@@ -125,6 +125,30 @@ function save_sensors($sensors, $path = "") {
 ###########################################
 # BASIC ROUTING HELPERS
 
+function get_common_path($path1, $path2) {
+
+    // in the future the function should accept an array of paths,
+    // as of now if more than two paths are provided, this will fail
+    // because any common path elements which exist in the other arrays
+    // are considered 'common' but only those elements that next to the
+    // other without hole in the array are the real common elements.
+    $paths = array($path1, $path2);
+
+    $exploded_paths = array();
+    foreach ($paths as $path) {
+        $exploded_paths[] = explode('/', trim($path, '/'));
+    }
+
+    // initialize the common paths array
+    $common_path = $exploded_paths[0];
+
+    foreach ($exploded_paths as $path) {
+        $common_path = array_intersect($path, $common_path);
+    }
+
+    return '/' . join('/', $common_path);
+}
+
 function get_controller() {
 
     return get_router_segment(0);
@@ -151,11 +175,26 @@ function get_request_uri() {
         //$request_uri = preg_replace('|^/|', '', $request_uri);
     }
 
-    $route = str_replace(
-        __DIR__,
-        '',
-        $_SERVER['DOCUMENT_ROOT'] . $request_uri
-    );
+    // in the following we must check if DOCUMENT_ROOT is part of
+    // REQUEST_URI, because this is not always the case, especially
+    // if the endpoint scripts are located in a place which is aliased
+    // in a VHOST config, see https://github.com/SpaceApi/endpoint-scripts/issues/4
+
+    if (strpos(__DIR__, $_SERVER['DOCUMENT_ROOT'])) {
+        $route = str_replace(
+            __DIR__,
+            '',
+            $_SERVER['DOCUMENT_ROOT'] . $request_uri
+        );
+    } else {
+        $common_path = get_common_path($request_uri, __DIR__);
+
+        $not_common = explode($common_path, $request_uri);
+        $not_common = array_reverse($not_common);
+        $not_common = $not_common[0];
+
+        $route = $not_common;
+    }
 
     $route = preg_replace('|^/|', '', $route);
 

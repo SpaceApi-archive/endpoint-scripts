@@ -1,0 +1,12 @@
+{
+  "name": "spaceapi/endpoint-scripts",
+  "description": "PHP scripts for the JSON generation and the status display page",
+  "minimum-stability": "stable",
+  "license": "BSD",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Romain Schmitz"
+    }
+  ]
+}

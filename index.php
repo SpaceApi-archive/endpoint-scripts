@@ -207,12 +207,17 @@ function get_request_uri() {
 
 function output_html() {
 
+    global $config;
+
     header('Content-type: text/html; charset=UTF-8');
 
     $template = file_get_contents('template.html');
     $monster = file_get_contents('img/monster/monster.svg');
 
-    $protocol = ($_SERVER['SERVER_PORT'] === 443) ? 'https' : 'http';
+    $protocol = ($_SERVER['SERVER_PORT'] === 443 ||
+        @$_SERVER['HTTPS'] === 'on' ||
+        @$_SERVER['REDIRECT_HTTPS'] === 'on') ? 'https' : 'http';
+
     $base_url = "$protocol://"
         . $_SERVER['HTTP_HOST']
         . $_SERVER['REQUEST_URI'];

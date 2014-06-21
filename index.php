@@ -180,7 +180,7 @@ function get_request_uri() {
     // if the endpoint scripts are located in a place which is aliased
     // in a VHOST config, see https://github.com/SpaceApi/endpoint-scripts/issues/4
 
-    if (strpos(__DIR__, $_SERVER['DOCUMENT_ROOT'])) {
+    if (strpos(__DIR__, $_SERVER['DOCUMENT_ROOT']) >= 0) {
         $route = str_replace(
             __DIR__,
             '',
